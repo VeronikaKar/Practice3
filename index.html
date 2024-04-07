@@ -2,23 +2,52 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Homework 8</title>
-    <link
-      href="
-https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.css
-"
-      rel="stylesheet"
-    />
+    <title>Module 9 locale storage</title>
 
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
-    <ul class="gallery"></ul>
-    <script src="
-https://cdn.jsdelivr.net/npm/basiclightbox@5.0.4/dist/basicLightbox.min.js
-"></script>
-    <script src="./js/gallery.js"></script>
+    <section class="storage">
+      <h1 class="storage-title">Local Storage</h1>
+      <div class="storage-form-wrapper">
+        <h2 class="storage-title js-output"></h2>
+
+        <form class="storage-form js-form">
+          <label class="storage-label" for="email">Name</label>
+          <input
+            class="storage-input"
+            type="text"
+            id="email"
+            name="userName"
+            placeholder="enter name"
+          />
+
+          <label class="storage-label" for="message">Age</label>
+          <input
+            class="storage-input"
+            type="number"
+            id="message"
+            name="userAge"
+            placeholder="enter age"
+          />
+
+          <button class="storage-btn success" type="submit">
+            send data to locale storage
+          </button>
+        </form>
+
+        <button
+          class="storage-btn error js-error"
+          data-action="clear"
+          type="button"
+        >
+          clear locale storage
+        </button>
+      </div>
+    </section>
+
+    <script type="module" src="./js/app.js"></script>
   </body>
 </html>
